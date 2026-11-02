@@ -1,0 +1,44 @@
+name: build
+
+on:
+  push:
+    branches: [build]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install
+        run: npm install --no-audit --no-fund 2>&1 | tee ci.log
+      - name: Typecheck
+        run: npx tsc --noEmit 2>&1 | tee -a ci.log; exit ${PIPESTATUS[0]}
+        continue-on-error: true
+      - name: Build
+        run: |
+          set -o pipefail
+          npm run build 2>&1 | tee -a ci.log
+      - name: Publish preview (dist without heavy media)
+        if: success()
+        run: |
+          mkdir -p /tmp/out && cp -r dist/. /tmp/out/ && rm -rf /tmp/out/media && cp ci.log /tmp/out/ci.log
+          cd /tmp/out && git init -q && git checkout -q -b dist-preview
+          git config user.name ci && git config user.email ci@users.noreply.github.com
+          git add -A && git commit -qm "preview ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" dist-preview
+      - name: Publish log
+        if: always()
+        run: |
+          mkdir -p /tmp/log && cp ci.log /tmp/log/ 2>/dev/null || echo "no log" > /tmp/log/ci.log
+          echo "${{ job.status }} ${GITHUB_SHA}" > /tmp/log/status.txt
+          cd /tmp/log && git init -q && git checkout -q -b ci-log
+          git config user.name ci && git config user.email ci@users.noreply.github.com
+          git add -A && git commit -qm "log ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" ci-log
