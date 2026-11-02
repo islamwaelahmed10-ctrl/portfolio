@@ -171,7 +171,6 @@ h1, h2, h3, p { margin: 0; }
 .tracks li.is-playing { background: rgba(255, 255, 255, 0.06); }
 .play { flex-shrink: 0; width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 1.5px solid color-mix(in srgb, var(--accent) 65%, transparent); background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; }
 .is-playing .play { background: var(--accent); color: var(--on); }
-[dir="rtl"] .play svg path { transform: scaleX(-1); transform-origin: center; }
 .tracks__n { width: 24px; font-size: 13px; color: var(--dim); }
 .tracks__title { flex: 1 1 150px; font-family: var(--f-ar); font-size: 22px; }
 .tracks__note { font-size: 12px; letter-spacing: 0.14em; color: var(--dim); }
@@ -196,7 +195,7 @@ h1, h2, h3, p { margin: 0; }
 .stats > div { display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 16px; background: #221F1F; }
 .stats__n { font-weight: 700; font-size: 40px; line-height: 1; }
 .card--minfat { display: flex; flex-wrap: wrap; gap: 32px; padding: clamp(22px, 4vw, 40px); background: #fff; border: 1px solid #D6E0D4; border-radius: 24px; }
-.card--minfat__cover { flex: 1 1 200px; max-width: 280px; aspect-ratio: 1; object-fit: cover; border-radius: 18px; align-self: flex-start; }
+.card--minfat__cover { flex: 1 1 200px; max-width: 280px; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 18px; align-self: flex-start; }
 .card--minfat__body { flex: 999 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
 .badge { padding: 4px 10px; border-radius: 999px; background: #12302F; color: #E2F4F1; font-size: 11px; letter-spacing: 0.16em; }
 .roles { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line-light); }
@@ -251,7 +250,7 @@ video.cover__media { z-index: 2; background: #000; }
 .field select option { color: var(--ink); }
 .form-err { color: #F2B8B8; }
 .show { display: flex; gap: 18px; padding: 18px; border-radius: 22px; background: #3A1F21; border: 1px solid rgba(245, 236, 228, 0.1); }
-.show__poster { width: 130px; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; flex-shrink: 0; }
+.show__poster { width: 130px; height: auto; align-self: flex-start; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; flex-shrink: 0; }
 .show__title { font-size: 24px; line-height: 1.2; }
 .live__sub { margin-top: 16px; }
 .clip { margin: 0; display: flex; flex-direction: column; gap: 10px; }

@@ -21,7 +21,7 @@ export default function Img({ name, alt, sizes = '100vw', className, style, eage
       alt={alt}
       loading={eager ? 'eager' : 'lazy'}
       decoding="async"
-      fetchPriority={eager ? 'high' : undefined}
+      {...(eager ? { fetchpriority: 'high' } : {})}
       className={className}
       style={style}
     />
