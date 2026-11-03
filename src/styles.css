@@ -300,10 +300,8 @@ video.cover__media { z-index: 2; background: #000; }
 p.ar, span.ar.muted, .workshop__places li.ar { font-family: var(--f-ruqaa); font-weight: 400; line-height: 1.9; }
 
 /* Titles keep dir="auto" for correct letter order, but line up with the page */
-.single__title, .cover__title { text-align: left; }
-[dir="rtl"] .single__title, [dir="rtl"] .cover__title { text-align: right; }
-/* Track names always sit on the right, in both languages */
-.tracks__title { text-align: right; }
+/* Bidaya: track names always sit on the right, in both languages */
+#bidaya .tracks__title { text-align: right; }
 
 /* ---------- RTL tweaks ---------- */
 [dir="rtl"] .label, [dir="rtl"] .label-sm, [dir="rtl"] .kicker:not(.ar) { letter-spacing: 0.12em; }
