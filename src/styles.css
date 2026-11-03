@@ -9,6 +9,7 @@
   --line-light: #E8DAD6;
   --f-ar: 'Vibes', 'Noto Naskh Arabic', serif;
   --f-hand: 'Vibes', cursive;
+  --f-ruqaa: 'Aref Ruqaa', 'Vibes', serif;
   --f-sans: 'DM Sans', system-ui, sans-serif;
   --pad: clamp(18px, 4vw, 32px);
   --section: clamp(72px, 10vw, 120px);
@@ -294,6 +295,9 @@ video.cover__media { z-index: 2; background: #000; }
 
 .consent { position: fixed; inset-inline: 16px; bottom: 16px; z-index: 20; max-width: 520px; margin-inline: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border-radius: 18px; background: #fff; color: var(--ink); box-shadow: 0 12px 40px rgba(30, 40, 34, 0.2); }
 .consent p.ar { font-size: 20px; }
+
+/* ---------- Arabic body text in Ruqaa ---------- */
+p.ar, span.ar.muted, .workshop__places li.ar { font-family: var(--f-ruqaa); font-weight: 400; line-height: 1.9; }
 
 /* ---------- RTL tweaks ---------- */
 [dir="rtl"] .label, [dir="rtl"] .label-sm, [dir="rtl"] .kicker:not(.ar) { letter-spacing: 0.12em; }
