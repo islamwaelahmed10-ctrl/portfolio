@@ -1,5 +1,11 @@
 {
   "id": "bidaya",
+  "order": 2,
+  "theme": {
+    "bg": "#12302F",
+    "fg": "#E2F4F1",
+    "accent": "#6FD0C5"
+  },
   "kicker": {
     "ar": "إسلام وائل مع سرد",
     "en": "ISLAM WAEL FEAT. SARD"

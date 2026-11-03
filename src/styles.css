@@ -299,6 +299,10 @@ video.cover__media { z-index: 2; background: #000; }
 /* ---------- Arabic body text in Ruqaa ---------- */
 p.ar, span.ar.muted, .workshop__places li.ar { font-family: var(--f-ruqaa); font-weight: 400; line-height: 1.9; }
 
+/* Titles keep dir="auto" for correct letter order, but line up with the page */
+.tracks__title, .single__title, .cover__title { text-align: left; }
+[dir="rtl"] .tracks__title, [dir="rtl"] .single__title, [dir="rtl"] .cover__title { text-align: right; }
+
 /* ---------- RTL tweaks ---------- */
 [dir="rtl"] .label, [dir="rtl"] .label-sm, [dir="rtl"] .kicker:not(.ar) { letter-spacing: 0.12em; }
 [dir="rtl"] .hero__cta.ar, [dir="rtl"] .hero__roles.ar { font-size: 22px; }
