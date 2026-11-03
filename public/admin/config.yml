@@ -3,6 +3,8 @@ backend:
   name: github
   repo: islamwaelahmed10-ctrl/portfolio
   branch: build
+  base_url: https://islamwael.pages.dev
+  auth_scope: public_repo
 site_url: https://islamwael.pages.dev
 display_url: https://islamwael.pages.dev
 logo_url: /media/img/logo-dark-96.webp

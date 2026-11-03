@@ -3,6 +3,8 @@ backend:
   name: github
   repo: islamwaelahmed10-ctrl/portfolio
   branch: build
+  base_url: https://islamwael.pages.dev # GitHub sign-in via functions/auth.js + functions/callback.js
+  auth_scope: public_repo
 
 site_url: https://islamwael.pages.dev
 display_url: https://islamwael.pages.dev
