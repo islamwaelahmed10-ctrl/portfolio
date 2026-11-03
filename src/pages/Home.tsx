@@ -6,6 +6,7 @@ import Singles from '../components/Singles';
 import Covers from '../components/Covers';
 import Film from '../components/Film';
 import Live from '../components/Live';
+import Workshops from '../components/Workshops';
 import Story from '../components/Story';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -27,6 +28,7 @@ export default function Home() {
         <Covers />
         <Film />
         <Live />
+        <Workshops />
         <Story />
         <Contact />
       </main>

@@ -32,6 +32,7 @@ export const NAV: { id: string; ar: string; en: string }[] = [
   { id: 'singles', ar: 'أغاني', en: 'SINGLES' },
   { id: 'film', ar: 'أفلام', en: 'FILM' },
   { id: 'live', ar: 'حفلات', en: 'LIVE' },
+  { id: 'workshops', ar: 'ورش', en: 'WORKSHOPS' },
   { id: 'story', ar: 'حكاية', en: 'STORY' },
   { id: 'contact', ar: 'راسلني', en: 'CONTACT' },
 ];
@@ -279,3 +280,52 @@ export const TEXT = {
   sent: { ar: 'وصلت، شكراً! هرد عليك قريب.', en: "Sent — thank you! I'll get back to you soon." },
   failed: { ar: 'حصلت مشكلة، ابعت على الإيميل مباشرة.', en: 'Something went wrong — please email directly.' },
 };
+
+// Workshops, choir training and music education
+export const WORKSHOPS_INTRO: T = {
+  ar: 'ورش كورال وتدريبات موسيقية مع منظمات وجامعات ومبادرات مجتمعية.',
+  en: 'Choir workshops and music training with NGOs, universities and community programmes.',
+};
+export const WORKSHOPS: { tag: string; title: T; body: T; places?: T[] }[] = [
+  {
+    tag: 'SAVE THE CHILDREN · ART STUDIO',
+    title: { ar: 'ورش وتدريبات كورال', en: 'Choir workshops & training' },
+    body: {
+      ar: 'قدّم إسلام أكثر من ورشة وتدريب كورال لمنظمة Save the Children، من خلال عمله مع شركة Art Studio، وانتهت بعروض حيّة.',
+      en: 'Islam led several choir workshops and training programmes for Save the Children through his work with Art Studio, culminating in live performances.',
+    },
+    places: [
+      { ar: 'مسرح إيوارت — الجامعة الأمريكية بالقاهرة', en: 'Ewart Hall — The American University in Cairo' },
+      { ar: 'فندق هيلتون رمسيس', en: 'Hilton Ramses Hotel' },
+      { ar: 'النادي السويسري', en: 'The Swiss Club' },
+    ],
+  },
+  {
+    tag: 'UNIVERSITIES',
+    title: { ar: 'ورش في الجامعات', en: 'University workshops' },
+    body: {
+      ar: 'ورش موسيقية لفرق وطلاب الجامعات.',
+      en: 'Music workshops for university teams and students.',
+    },
+    places: [
+      { ar: 'فريق أرابيسك — كلية التجارة، جامعة عين شمس', en: 'Arabesque — Faculty of Commerce, Ain Shams University' },
+      { ar: 'كلية الهندسة — جامعة عين شمس', en: 'Faculty of Engineering — Ain Shams University' },
+    ],
+  },
+  {
+    tag: 'RETREATS',
+    title: { ar: 'ريتريتس الموسيقى والغناء', en: 'Music & singing retreats' },
+    body: {
+      ar: 'مشاركة في ريتريتس قائمة على الموسيقى والغناء.',
+      en: 'Taking part in retreats built around music and singing.',
+    },
+  },
+  {
+    tag: 'NGOs',
+    title: { ar: 'ورش مع منظمات المجتمع المدني', en: 'Workshops with NGOs' },
+    body: {
+      ar: 'ورش موسيقية ضمن برامج منظمات غير حكومية.',
+      en: 'Music workshops as part of NGO programmes.',
+    },
+  },
+];
