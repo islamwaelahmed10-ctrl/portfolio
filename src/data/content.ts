@@ -309,7 +309,7 @@ export const WORKSHOPS: { tag: string; title: T; body: T; places?: T[] }[] = [
     },
     places: [
       { ar: 'فريق أرابيسك — كلية التجارة، جامعة عين شمس', en: 'Arabesque — Faculty of Commerce, Ain Shams University' },
-      { ar: 'كلية الهندسة — جامعة عين شمس', en: 'Faculty of Engineering — Ain Shams University' },
+      { ar: 'فريق أرابيسك — كلية الهندسة، جامعة عين شمس', en: 'Arabesque — Faculty of Engineering, Ain Shams University' },
     ],
   },
   {
