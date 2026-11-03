@@ -1,0 +1,116 @@
+{
+  "about": {
+    "ar": "تأليف وتوزيع وإنتاج وميكس وماستر لأعمال فنانين تانيين.",
+    "en": "Composition, arrangement, production, mixing and mastering for other artists' records."
+  },
+  "pink": {
+    "artistAr": "مي الغيطي",
+    "artistEn": "May Elghety",
+    "cover": "cover-pink",
+    "credits": [
+      {
+        "k": "MELODY & LYRICS",
+        "v": "May Elghety"
+      },
+      {
+        "k": "HARMONY & ARRANGEMENT",
+        "v": "Islam Wael"
+      },
+      {
+        "k": "PIANO & KEYBOARDS (RECORDED)",
+        "v": "Islam Wael"
+      },
+      {
+        "k": "BASS GUITAR · MELODY & HARMONY",
+        "v": "Islam Amr",
+        "wide": true
+      }
+    ],
+    "tracks": [
+      {
+        "n": "01",
+        "title": "Breathe Up",
+        "audio": "/media/audio/pink-01.m4a"
+      },
+      {
+        "n": "02",
+        "title": "To the End of My Love",
+        "audio": "/media/audio/pink-02.m4a"
+      },
+      {
+        "n": "03",
+        "title": "45",
+        "audio": "/media/audio/pink-03.m4a"
+      },
+      {
+        "n": "04",
+        "title": "Alright",
+        "audio": "/media/audio/pink-04.m4a"
+      },
+      {
+        "n": "05",
+        "title": "Pink",
+        "audio": "/media/audio/pink-05.m4a"
+      }
+    ],
+    "links": [
+      {
+        "label": "SPOTIFY",
+        "url": "https://open.spotify.com/album/0ITx2SRTYErw5nDwTZRKMR"
+      },
+      {
+        "label": "ANGHAMI",
+        "url": "https://open.anghami.com/7D10Url33Qb"
+      },
+      {
+        "label": "SOUNDCLOUD",
+        "url": "https://on.soundcloud.com/c53pLrzccd8xFxHt8"
+      }
+    ],
+    "stats": [
+      {
+        "n": "5",
+        "k": "TRACKS ARRANGED"
+      },
+      {
+        "n": "5",
+        "k": "TRACKS MIXED"
+      },
+      {
+        "n": "4",
+        "k": "TRACKS MASTERED"
+      }
+    ]
+  },
+  "minFat": {
+    "title": "من فات قديمه",
+    "cover": "cover-minfat",
+    "tracks": [
+      {
+        "title": "وا حبيبي",
+        "role": "ARRANGEMENT · HARMONY · PRODUCTION · PIANO & KEYS"
+      },
+      {
+        "title": "أنا أتوب",
+        "role": "FULL HARMONY · PIANO & KEYS"
+      }
+    ],
+    "links": [
+      {
+        "label": "APPLE MUSIC",
+        "url": "https://music.apple.com/us/album/%D9%85%D9%86-%D9%81%D8%A7%D8%AA-%D9%82%D8%AF%D9%8A%D9%85%D9%87-ep/1865618362"
+      },
+      {
+        "label": "DEEZER",
+        "url": "https://www.deezer.com/en/album/888139762"
+      }
+    ]
+  },
+  "services": [
+    "COMPOSITION",
+    "ARRANGEMENT",
+    "PRODUCTION",
+    "MIXING",
+    "MASTERING"
+  ]
+}

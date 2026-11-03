@@ -1,0 +1,50 @@
+{
+  "singles": {
+    "ar": "أغاني أصلية وريمكسات — تأليف وتوزيع وميكس وماستر.",
+    "en": "Originals and remixes — composed, arranged, mixed and mastered."
+  },
+  "covers": {
+    "ar": "أغاني تعرفها، بهارموني وتوزيع جديد — من إنستجرام على طول.",
+    "en": "Songs you know, re-harmonized and re-arranged — straight from Instagram."
+  },
+  "film": {
+    "ar": "موسيقى تصويرية لأفلام قصيرة.",
+    "en": "Original scores for short films."
+  },
+  "live": {
+    "ar": "«يا عالَم» على المسرح",
+    "en": "Ya 3alam on stage"
+  },
+  "contact": {
+    "ar": "إنتاج، توزيع، حفلات، أو تعاون — ابعتلي رسالة.",
+    "en": "Production, arrangement, concerts or collaboration — send a message."
+  },
+  "nextShow": {
+    "ar": "مفيش مواعيد جديدة دلوقتي",
+    "en": "No new dates yet"
+  },
+  "nextShowSub": {
+    "ar": "سيب إيميلك وهتعرف الأول.",
+    "en": "Leave your email and you'll hear first."
+  },
+  "pressKitSub": {
+    "ar": "بايو قصير، صور بجودة عالية، ولينكات",
+    "en": "Short bio, high-res photos and links"
+  },
+  "workWithMe": {
+    "ar": "اشتغل معايا ←",
+    "en": "WORK WITH ME →"
+  },
+  "listen": {
+    "ar": "اسمع",
+    "en": "LISTEN"
+  },
+  "sent": {
+    "ar": "وصلت، شكراً! هرد عليك قريب.",
+    "en": "Sent — thank you! I'll get back to you soon."
+  },
+  "failed": {
+    "ar": "حصلت مشكلة، ابعت على الإيميل مباشرة.",
+    "en": "Something went wrong — please email directly."
+  }
+}

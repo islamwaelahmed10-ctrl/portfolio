@@ -84,7 +84,7 @@ fs.writeFileSync(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="
 ${routes.map((r) => `  <url><loc>${SITE}${r.path}</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`).join('\n')}
 </urlset>
 `);
-fs.writeFileSync(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
+fs.writeFileSync(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 // Cloudflare Pages caching: hashed assets and media forever, HTML always fresh.
 fs.writeFileSync(path.join(dist, '_headers'), `/assets/*
   Cache-Control: public, max-age=31536000, immutable

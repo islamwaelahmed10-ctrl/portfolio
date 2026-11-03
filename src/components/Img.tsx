@@ -8,7 +8,10 @@ type Props = { name: string; alt: string; sizes?: string; className?: string; st
 // Responsive WebP image built from the generated manifest.
 export default function Img({ name, alt, sizes = '100vw', className, style, eager }: Props) {
   const set = table[name];
-  if (!set) return null;
+  // Images uploaded from the dashboard are stored as plain paths (/media/uploads/...).
+  if (!set) return name && name.includes('/') ? (
+    <img src={name} alt={alt} sizes={sizes} loading={eager ? 'eager' : 'lazy'} decoding="async" className={className} style={style} />
+  ) : null;
   const sorted = [...set].sort((a, b) => a[1] - b[1]);
   const largest = sorted[sorted.length - 1];
   return (
@@ -30,7 +33,7 @@ export default function Img({ name, alt, sizes = '100vw', className, style, eage
 
 export const imgUrl = (name: string) => {
   const set = table[name];
-  if (!set) return '';
+  if (!set) return name && name.includes('/') ? name : '';
   const big = [...set].sort((a, b) => b[1] - a[1])[0];
   return `/media/img/${name}-${big[0]}.webp`;
 };

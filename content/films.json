@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "ar": "لسّة فاكِر",
+      "en": "Lingering",
+      "accent": "#7CC7C9",
+      "dirLabel": "DIRECTED BY",
+      "director": "Bahy Taha",
+      "ratio": "1262 / 1800",
+      "poster": "film-lingering-poster",
+      "motion": "/media/video/lingering-motion.mp4",
+      "trailer": "/media/video/lingering-trailer.mp4",
+      "still": "film-lingering-still",
+      "extra": {
+        "img": "film-lingering-eaff",
+        "alt": "Still from Lingering, Official Selection Egyptian American Film Festival 2026"
+      },
+      "fests": [
+        {
+          "name": "Busan Inter-City Film Festival",
+          "year": "10th · 2026"
+        },
+        {
+          "name": "Alexandria Short Film Festival",
+          "year": "12th · 2026"
+        },
+        {
+          "name": "Egyptian American Film Festival",
+          "year": "2026"
+        }
+      ]
+    },
+    {
+      "ar": "زحمة",
+      "en": "Overwhelming",
+      "accent": "#A9B9E0",
+      "dirLabel": "WRITTEN & DIRECTED BY",
+      "director": "Bahy Taha",
+      "ratio": "4 / 5",
+      "poster": "film-zahma-poster",
+      "motion": "",
+      "trailer": "/media/video/zahma-trailer.mp4",
+      "still": "film-zahma-still",
+      "extra": {
+        "img": "",
+        "alt": ""
+      },
+      "fests": [
+        {
+          "name": "Festival Internazionale del Cinema di Salerno",
+          "year": "78th"
+        },
+        {
+          "name": "Egyptian American Film Festival",
+          "year": "5th edition · Student projects"
+        }
+      ]
+    }
+  ]
+}

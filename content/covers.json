@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "title": "رجاوي فلسطيني",
+      "artist": "Raja Casablanca fans",
+      "n": "01",
+      "poster": "cover-01",
+      "video": "/media/video/cover-01.mp4"
+    },
+    {
+      "title": "شايف البحر شو كبير",
+      "artist": "Fairouz",
+      "n": "02",
+      "poster": "cover-02",
+      "video": "/media/video/cover-02.mp4"
+    },
+    {
+      "title": "علموني عنيكي",
+      "artist": "Mohamed Mounir",
+      "n": "03",
+      "poster": "cover-03",
+      "video": "/media/video/cover-03.mp4"
+    },
+    {
+      "title": "متستعجبش متستغربش",
+      "artist": "Ismail Yassin",
+      "n": "04",
+      "poster": "cover-04",
+      "video": "/media/video/cover-04.mp4"
+    },
+    {
+      "title": "مسافر",
+      "artist": "Shadia",
+      "n": "05",
+      "poster": "cover-05",
+      "video": "/media/video/cover-05.mp4"
+    },
+    {
+      "title": "يلا بينا تعالوا",
+      "artist": "El Kit Kat · Sayed Mekkawy",
+      "n": "06",
+      "poster": "cover-06",
+      "video": "/media/video/cover-06.mp4"
+    },
+    {
+      "title": "شبابيك",
+      "artist": "Mohamed Mounir",
+      "n": "07",
+      "poster": "cover-07",
+      "video": "/media/video/cover-07.mp4"
+    },
+    {
+      "title": "جانا الهوى",
+      "artist": "Abdel Halim Hafez",
+      "n": "08",
+      "poster": "cover-08",
+      "video": "/media/video/cover-08.mp4"
+    },
+    {
+      "title": "حالك وحالي",
+      "artist": "Khateeb · El Waili",
+      "n": "09",
+      "poster": "cover-09",
+      "video": "/media/video/cover-09.mp4"
+    }
+  ]
+}

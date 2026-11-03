@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import Img, { imgUrl } from './Img';
 import Heading from './Heading';
-import { NOIR_CLIPS, NOIR_PHOTOS, SHOWS, TEXT, TTP_CLIPS, TTP_PHOTOS } from '../data/content';
+import { CONCERTS, SHOWS, TEXT, type Photo } from '../data/content';
 import { useLang } from '../lib/i18n';
 import { sendForm } from '../lib/forms';
 
-type Photo = { img: string; alt: string; span: string; pos?: string };
 const Bento = ({ photos }: { photos: Photo[] }) => (
   <div className="bento">
     {photos.map((p) => <Img key={p.img} name={p.img} alt={p.alt} sizes="(max-width: 700px) 50vw, 600px" className={`bento__${p.span || 'one'}`} style={p.pos ? { objectPosition: p.pos } : undefined} />)}
@@ -65,27 +64,25 @@ export default function Live() {
           ))}
         </div>
 
-        <p className="label-sm gold live__sub">FROM THE FIRST SHOW · NOIR ART ZONE · OCT 24, 2025</p>
-        <div className="grid grid--clips">
-          {NOIR_CLIPS.map((c) => (
-            <figure key={c.n} className="clip">
-              <video src={c.video} poster={imgUrl(c.poster)} controls playsInline preload="none" aria-label={`${c.title}, live at Noir`} />
-              <figcaption><span className="label-sm muted">{c.n}</span><span lang="ar" className="ar">{c.title}</span><span className="label-sm gold">{c.tag}</span></figcaption>
-            </figure>
-          ))}
-        </div>
-        <Bento photos={NOIR_PHOTOS} />
-
-        <p className="label-sm gold live__sub">FROM MAZRA3A · THE THIRD PLACE · MAADI · NOV 15, 2025</p>
-        <div className="grid grid--vclips">
-          {TTP_CLIPS.map((c) => (
-            <figure key={c.n} className="clip clip--v">
-              <video src={c.video} poster={imgUrl(c.poster)} controls playsInline preload="none" aria-label={`${c.title}, live at The Third Place`} />
-              <figcaption><span lang="ar" className="ar">{c.title}</span><span className="label-sm gold">{c.tag}</span></figcaption>
-            </figure>
-          ))}
-        </div>
-        <Bento photos={TTP_PHOTOS} />
+        {CONCERTS.map((c) => (
+          <div key={c.label} className="stack">
+            <p className="label-sm gold live__sub">{c.label}</p>
+            {c.clips?.length > 0 && (
+              <div className={`grid ${c.vertical ? 'grid--vclips' : 'grid--clips'}`}>
+                {c.clips.map((clip, i) => (
+                  <figure key={clip.video || i} className={c.vertical ? 'clip clip--v' : 'clip'}>
+                    <video src={clip.video} poster={imgUrl(clip.poster)} controls playsInline preload="none" aria-label={`${clip.title}, live at ${c.place}`} />
+                    <figcaption>
+                      {!c.vertical && clip.n && <span className="label-sm muted">{clip.n}</span>}
+                      <span lang="ar" className="ar">{clip.title}</span><span className="label-sm gold">{clip.tag}</span>
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            )}
+            {c.photos?.length > 0 && <Bento photos={c.photos} />}
+          </div>
+        ))}
       </div>
     </section>
   );

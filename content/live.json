@@ -1,0 +1,218 @@
+{
+  "shows": [
+    {
+      "tag": "FIRST LIVE · YA 3ALAM",
+      "title": "Ya 3alam — Live for the first time",
+      "date": "Oct 24, 2025 · 8 PM",
+      "venue": "Noir Art Zone — Suleiman El Halabi St., Downtown Cairo",
+      "note": "",
+      "poster": "show-noir",
+      "alt": "Poster: Ya 3alam live for the first time at Noir Art Zone"
+    },
+    {
+      "tag": "MAZRA3A COMMUNITY · YA 3ALAM",
+      "title": "Islam Wael & Friends — Music Night",
+      "date": "Saturday, Nov 15, 2025",
+      "venue": "The Third Place — Maadi",
+      "note": "With the Mazra3a community",
+      "poster": "show-ttp",
+      "alt": "Poster: Islam Wael and Friends music night at The Third Place, Maadi"
+    }
+  ],
+  "concerts": [
+    {
+      "label": "FROM THE FIRST SHOW · NOIR ART ZONE · OCT 24, 2025",
+      "place": "Noir",
+      "vertical": false,
+      "clips": [
+        {
+          "n": "01",
+          "title": "لِكُلِّ شَيءٍ",
+          "video": "/media/video/noir-clip-01.mp4",
+          "poster": "noir-poster-01",
+          "tag": "LIVE · 0:30"
+        },
+        {
+          "n": "02",
+          "title": "الأَرْضُ لَنْ تَنْسَى",
+          "video": "/media/video/noir-clip-02.mp4",
+          "poster": "noir-poster-02",
+          "tag": "LIVE · 0:30"
+        },
+        {
+          "n": "03",
+          "title": "النَّدَى",
+          "video": "/media/video/noir-clip-03.mp4",
+          "poster": "noir-poster-03",
+          "tag": "LIVE · 0:30"
+        },
+        {
+          "n": "04",
+          "title": "حِلمْ",
+          "video": "/media/video/noir-clip-04.mp4",
+          "poster": "noir-poster-04",
+          "tag": "LIVE · 0:30"
+        },
+        {
+          "n": "05",
+          "title": "رَويت",
+          "video": "/media/video/noir-clip-05.mp4",
+          "poster": "noir-poster-05",
+          "tag": "LIVE · 0:30"
+        },
+        {
+          "n": "06",
+          "title": "تُراب الناس",
+          "video": "/media/video/noir-clip-06.mp4",
+          "poster": "noir-poster-06",
+          "tag": "LIVE · 0:30"
+        },
+        {
+          "n": "07",
+          "title": "بَحر الضَّياع",
+          "video": "/media/video/noir-clip-07.mp4",
+          "poster": "noir-poster-07",
+          "tag": "LIVE · 0:30"
+        },
+        {
+          "n": "08",
+          "title": "شايِف السَّراب",
+          "video": "/media/video/noir-clip-08.mp4",
+          "poster": "noir-poster-08",
+          "tag": "LIVE · 0:30"
+        }
+      ],
+      "photos": [
+        {
+          "img": "noir-01",
+          "alt": "Islam Wael smiling at the keys with the band at Noir",
+          "span": "big",
+          "pos": "center 35%"
+        },
+        {
+          "img": "noir-02",
+          "alt": "Islam Wael at the keyboard",
+          "span": "tall"
+        },
+        {
+          "img": "noir-03",
+          "alt": "Singer at the microphone",
+          "span": "tall"
+        },
+        {
+          "img": "noir-04",
+          "alt": "Oud player",
+          "span": "wide"
+        },
+        {
+          "img": "noir-05",
+          "alt": "Singer performing with the oud behind her",
+          "span": "tall"
+        },
+        {
+          "img": "noir-06",
+          "alt": "Singer in a striped shirt",
+          "span": "tall"
+        },
+        {
+          "img": "noir-07",
+          "alt": "Islam Wael on keys with the band at Noir",
+          "span": "wide"
+        },
+        {
+          "img": "noir-08",
+          "alt": "Bass player",
+          "span": "wide"
+        },
+        {
+          "img": "noir-09",
+          "alt": "Percussionist with a riq",
+          "span": "wide",
+          "pos": "center 30%"
+        }
+      ]
+    },
+    {
+      "label": "FROM MAZRA3A · THE THIRD PLACE · MAADI · NOV 15, 2025",
+      "place": "The Third Place",
+      "vertical": true,
+      "clips": [
+        {
+          "title": "لِكُلِّ شَيءٍ",
+          "tag": "LIVE · 0:30",
+          "n": "01",
+          "video": "/media/video/ttp-clip-01.mp4",
+          "poster": "ttp-poster-01"
+        },
+        {
+          "title": "تقديم الألبوم",
+          "tag": "INTRO · 0:20",
+          "n": "02",
+          "video": "/media/video/ttp-clip-02.mp4",
+          "poster": "ttp-poster-02"
+        },
+        {
+          "title": "الأَرْضُ لَنْ تَنْسَى",
+          "tag": "LIVE · 0:30",
+          "n": "03",
+          "video": "/media/video/ttp-clip-03.mp4",
+          "poster": "ttp-poster-03"
+        },
+        {
+          "title": "رَويت",
+          "tag": "LIVE · 0:30",
+          "n": "04",
+          "video": "/media/video/ttp-clip-04.mp4",
+          "poster": "ttp-poster-04"
+        },
+        {
+          "title": "تُراب الناس",
+          "tag": "LIVE · 0:30",
+          "n": "05",
+          "video": "/media/video/ttp-clip-05.mp4",
+          "poster": "ttp-poster-05"
+        },
+        {
+          "title": "تحية للعازفين",
+          "tag": "THE BAND · 0:27",
+          "n": "06",
+          "video": "/media/video/ttp-clip-06.mp4",
+          "poster": "ttp-poster-06"
+        }
+      ],
+      "photos": [
+        {
+          "img": "ttp-01",
+          "alt": "The band playing under the Mazra3a neon sign",
+          "span": "big"
+        },
+        {
+          "img": "ttp-02",
+          "alt": "Islam Wael at the keys with guitar and bass",
+          "span": "tall"
+        },
+        {
+          "img": "ttp-03",
+          "alt": "Oud player",
+          "span": "tall"
+        },
+        {
+          "img": "ttp-04",
+          "alt": "Islam Wael on keys next to the oud",
+          "span": "wide",
+          "pos": "center 40%"
+        },
+        {
+          "img": "ttp-05",
+          "alt": "Oud and riq",
+          "span": ""
+        },
+        {
+          "img": "ttp-06",
+          "alt": "Guitarist",
+          "span": ""
+        }
+      ]
+    }
+  ]
+}

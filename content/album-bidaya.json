@@ -1,0 +1,73 @@
+{
+  "id": "bidaya",
+  "kicker": {
+    "ar": "إسلام وائل مع سرد",
+    "en": "ISLAM WAEL FEAT. SARD"
+  },
+  "ar": "بداية",
+  "en": "Bidaya",
+  "year": "2023",
+  "cover": "cover-bidaya",
+  "coverAlt": "Bidaya album cover: an unborn child inside a teal vinyl record",
+  "about": {
+    "ar": "لما الحكاية تقابل الموسيقى. تأليف وإنتاج وميكس وماستر إسلام وائل. تسجيل البيانو والكيبورد لإسلام وائل. الجيتاريست عمرو شوقي كان جزء كبير من صناعة الألبوم، وشارك المطرب حسام حسن كمان.",
+    "en": "Storytelling meets music. Composed, produced, mixed and mastered by Islam Wael, who also recorded the piano and keyboards. Guitarist Amr Shawky was a major part of making it, and vocalist Hossam Hassan contributed too."
+  },
+  "links": [
+    {
+      "label": "SPOTIFY",
+      "url": "https://open.spotify.com/album/0J1KplHK2EJtI7ogFoXI8T"
+    },
+    {
+      "label": "APPLE MUSIC",
+      "url": "https://music.apple.com/us/album/%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9/1668158641"
+    },
+    {
+      "label": "ANGHAMI",
+      "url": "https://open.anghami.com/eR9bQym53Qb"
+    },
+    {
+      "label": "SOUNDCLOUD",
+      "url": "https://on.soundcloud.com/ZfeXNcaqLecexwNV6"
+    }
+  ],
+  "tracks": [
+    {
+      "n": "01",
+      "title": "00:00 AM",
+      "audio": "/media/audio/bidaya-01.m4a"
+    },
+    {
+      "n": "02",
+      "title": "129 هـ",
+      "note": "FEAT. TUQA TAREK",
+      "audio": "/media/audio/bidaya-02.m4a"
+    },
+    {
+      "n": "03",
+      "title": "بحلم",
+      "audio": "/media/audio/bidaya-03.m4a"
+    },
+    {
+      "n": "04",
+      "title": "سحاب",
+      "audio": "/media/audio/bidaya-04.m4a"
+    },
+    {
+      "n": "05",
+      "title": "يمضي الزمان",
+      "audio": "/media/audio/bidaya-05.m4a"
+    },
+    {
+      "n": "06",
+      "title": "Shadow of the Day",
+      "note": "LINKIN PARK COVER",
+      "audio": "/media/audio/bidaya-06.m4a"
+    },
+    {
+      "n": "07",
+      "title": "23:37 PM",
+      "audio": "/media/audio/bidaya-07.m4a"
+    }
+  ]
+}

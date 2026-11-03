@@ -1,0 +1,88 @@
+{
+  "id": "ya3alam",
+  "kicker": {
+    "ar": "الألبوم الأول",
+    "en": "DEBUT ALBUM"
+  },
+  "ar": "يا عالَم",
+  "en": "Ya 3alam",
+  "year": "2024",
+  "cover": "cover-ya3alam",
+  "coverAlt": "Ya 3alam album cover: a hand reaching up through a circle of figures",
+  "about": {
+    "ar": "تأليف وإنتاج وميكس وماستر إسلام وائل، وهو كاتب أغلب الأغاني — تمن أغاني بأصوات مختلفة، وشارك إسلام الجندي وهيثم صبحي في التلحين.",
+    "en": "Composed, produced, mixed and mastered by Islam Wael, who also wrote most of the songs — eight tracks with a range of vocalists, with Islam El Gendy and Hitham Sobhy also taking part in composing."
+  },
+  "links": [
+    {
+      "label": "SPOTIFY",
+      "url": "https://open.spotify.com/album/2RWtubb9v4NdRtjlliYts8"
+    },
+    {
+      "label": "APPLE MUSIC",
+      "url": "https://music.apple.com/us/album/%D9%8A%D8%A7-%D8%B9%D8%A7%D9%84-%D9%85/1772193988"
+    },
+    {
+      "label": "ANGHAMI",
+      "url": "https://play.anghami.com/album/1058825343"
+    },
+    {
+      "label": "DEEZER",
+      "url": "https://www.deezer.com/album/652578321"
+    },
+    {
+      "label": "MUSIC VIDEO",
+      "url": "https://youtu.be/M3vvyrf7sTY"
+    }
+  ],
+  "tracks": [
+    {
+      "n": "01",
+      "title": "لِكُلِّ شَيءٍ",
+      "note": "FEAT. ISLAM EL GENDY",
+      "audio": "/media/audio/ya3alam-01.m4a"
+    },
+    {
+      "n": "02",
+      "title": "الأَرْضُ لَنْ تَنْسَى",
+      "note": "FEAT. HEBA SAYED",
+      "audio": "/media/audio/ya3alam-02.m4a"
+    },
+    {
+      "n": "03",
+      "title": "النَّدَى",
+      "note": "FEAT. HOSSAM HASSAN",
+      "audio": "/media/audio/ya3alam-03.m4a"
+    },
+    {
+      "n": "04",
+      "title": "حِلمْ",
+      "note": "FEAT. HITHAM SOBHY",
+      "audio": "/media/audio/ya3alam-04.m4a"
+    },
+    {
+      "n": "05",
+      "title": "رَويت",
+      "note": "FEAT. HEBA MAGDY",
+      "audio": "/media/audio/ya3alam-05.m4a"
+    },
+    {
+      "n": "06",
+      "title": "تُراب الناس",
+      "note": "FEAT. ISLAM EL GENDY",
+      "audio": "/media/audio/ya3alam-06.m4a"
+    },
+    {
+      "n": "07",
+      "title": "بَحر الضَّياع",
+      "note": "FEAT. HITHAM SOBHY",
+      "audio": "/media/audio/ya3alam-07.m4a"
+    },
+    {
+      "n": "08",
+      "title": "شايِف السَّراب",
+      "note": "FEAT. ISLAM EL GENDY",
+      "audio": "/media/audio/ya3alam-08.m4a"
+    }
+  ]
+}

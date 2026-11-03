@@ -1,0 +1,72 @@
+{
+  "name": {
+    "ar": "إسلام وائل",
+    "en": "Islam Wael"
+  },
+  "email": "islamwaelmusic@gmail.com",
+  "roles": {
+    "ar": "مؤلف · ملحن · موزّع — القاهرة",
+    "en": "COMPOSER · SONGWRITER · ARRANGER — CAIRO"
+  },
+  "tagline": {
+    "ar": "أغاني، وموسيقى أوركسترا، وموسيقى أفلام — تأليف وتلحين وتوزيع من القاهرة.",
+    "en": "Songs, orchestral writing and film scores — composed, written and arranged in Cairo."
+  },
+  "description": {
+    "ar": "إسلام وائل — مؤلف وملحن وموزّع موسيقي من القاهرة. ألبوم «يا عالم»، و«بداية»، وموسيقى أفلام، وتوزيعات.",
+    "en": "Islam Wael — composer, songwriter and arranger from Cairo. Debut album Ya 3alam, Bidaya, film scores and arrangements."
+  },
+  "genres": [
+    {
+      "ar": "أغاني عربي",
+      "en": "Arabic songs"
+    },
+    {
+      "ar": "روك",
+      "en": "Rock"
+    },
+    {
+      "ar": "إلكتروني",
+      "en": "Electronic"
+    },
+    {
+      "ar": "أوركسترا",
+      "en": "Orchestral"
+    },
+    {
+      "ar": "فولكلور مصري",
+      "en": "Egyptian folklore"
+    },
+    {
+      "ar": "موسيقى أفلام",
+      "en": "Film scores"
+    },
+    {
+      "ar": "Alternative Oriental",
+      "en": "Alternative Oriental"
+    }
+  ],
+  "social": [
+    {
+      "label": "INSTAGRAM",
+      "url": "https://www.instagram.com/islam_wael_/"
+    },
+    {
+      "label": "FACEBOOK",
+      "url": "https://www.facebook.com/islamwaelofficial/"
+    },
+    {
+      "label": "YOUTUBE",
+      "url": "https://www.youtube.com/@IslamWaelmusic"
+    },
+    {
+      "label": "TIKTOK",
+      "url": "https://www.tiktok.com/@islamwaelll"
+    },
+    {
+      "label": "SOUNDCLOUD",
+      "url": "https://soundcloud.com/islamwael33"
+    }
+  ],
+  "pressKitUrl": "/press-kit.pdf"
+}

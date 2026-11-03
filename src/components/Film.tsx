@@ -30,7 +30,7 @@ export default function Film() {
             <div className="film__body">
               <h3 className="heading heading--lg"><span lang="ar" className="ar">{f.ar}</span><span className="hand" style={{ color: f.accent }}>{f.en}</span></h3>
               <dl className="credits">
-                <div><dt>{f.dirLabel}</dt><dd>Bahy Taha</dd></div>
+                <div><dt>{f.dirLabel}</dt><dd>{f.director}</dd></div>
                 <div><dt>FILM SCORE</dt><dd>Islam Wael</dd></div>
               </dl>
               <div className="fests">
@@ -42,9 +42,11 @@ export default function Film() {
                   </div>
                 ))}
               </div>
-              <span className="label-sm" style={{ color: f.accent }}>TRAILER</span>
-              <video className="film__trailer" src={f.trailer} poster={imgUrl(f.still)} controls playsInline preload="none" aria-label={`${f.en} trailer`} />
-              {f.extra && <Img name={f.extra.img} alt={f.extra.alt} sizes="(max-width: 800px) 90vw, 760px" className="film__still" />}
+              {f.trailer && <>
+                <span className="label-sm" style={{ color: f.accent }}>TRAILER</span>
+                <video className="film__trailer" src={f.trailer} poster={imgUrl(f.still || '')} controls playsInline preload="none" aria-label={`${f.en} trailer`} />
+              </>}
+              {f.extra?.img && <Img name={f.extra.img} alt={f.extra.alt} sizes="(max-width: 800px) 90vw, 760px" className="film__still" />}
             </div>
           </article>
         ))}
