@@ -242,156 +242,119 @@ collections:
       label: رسالة الخطأ
 - name: albums
   label: الألبومات
+  label_singular: ألبوم
   icon: album
+  description: كل ألبوم هنا بيبقى قسم في الصفحة الرئيسية. لإضافة ألبوم جديد دوس New. الترتيب حسب خانة «الترتيب».
+  folder: content/albums
+  extension: json
+  format: json
+  create: true
+  delete: true
+  slug: '{{fields.id}}'
+  identifier_field: en
+  summary: '{{fields.order}}. {{fields.en}} — {{fields.ar}} ({{fields.year}})'
+  sortable_fields:
+  - order
+  - year
+  - en
   editor:
     preview: false
-  files:
-  - name: ya3alam
-    label: يا عالم
-    file: content/album-ya3alam.json
+  fields:
+  - name: id
+    label: كود الألبوم (إنجليزي صغير من غير مسافات، مثلاً ya3alam)
+    widget: string
+    pattern:
+    - ^[a-z0-9-]+$
+    - حروف إنجليزي صغيرة وأرقام وشرطة بس
+  - name: order
+    label: الترتيب في الصفحة (1 = الأول)
+    widget: number
+    value_type: int
+    default: 3
+  - name: theme
+    label: ألوان القسم
+    widget: object
+    collapsed: false
     fields:
-    - name: id
-      widget: hidden
-    - widget: object
-      collapsed: false
-      fields:
-      - name: ar
-        label: عربي
-        widget: string
-      - name: en
-        label: English
-        widget: string
-      name: kicker
-      label: السطر الصغير فوق الاسم
+    - name: bg
+      label: لون الخلفية
+      widget: color
+      default: '#1E2822'
+    - name: fg
+      label: لون الكلام
+      widget: color
+      default: '#F8F2EF'
+    - name: accent
+      label: اللون المميز (العناوين والأزرار)
+      widget: color
+      default: '#D9A9AC'
+  - widget: object
+    collapsed: false
+    fields:
     - name: ar
-      label: الاسم بالعربي
+      label: عربي
       widget: string
     - name: en
-      label: الاسم بالإنجليزي
+      label: English
       widget: string
-    - name: year
-      label: السنة
-      widget: string
-    - name: cover
-      label: الغلاف
-      widget: image
-    - name: coverAlt
-      label: وصف الغلاف (لجوجل وللمكفوفين)
-      widget: string
-    - widget: object
-      collapsed: false
-      fields:
-      - name: ar
-        label: عربي
-        widget: text
-      - name: en
-        label: English
-        widget: text
-      name: about
-      label: عن الألبوم
-    - widget: list
-      summary: '{{fields.label}}'
-      fields:
-      - name: label
-        label: اسم الزرار (Spotify, YouTube...)
-        widget: string
-      - name: url
-        label: اللينك
-        widget: string
-      name: links
-      label: اللينكات
-    - widget: list
-      summary: '{{fields.n}} — {{fields.title}}'
-      fields:
-      - name: n
-        label: الرقم
-        widget: string
-      - name: title
-        label: اسم التراك
-        widget: string
-      - name: note
-        label: ملاحظة (مثلاً FEAT. ...)
-        widget: string
-        required: false
-      - name: audio
-        label: مقطع صوت (m4a / mp3)
-        widget: file
-        required: false
-      name: tracks
-      label: التراكات
-  - name: bidaya
-    label: بداية
-    file: content/album-bidaya.json
+    name: kicker
+    label: السطر الصغير فوق الاسم
+  - name: ar
+    label: الاسم بالعربي
+    widget: string
+  - name: en
+    label: الاسم بالإنجليزي
+    widget: string
+  - name: year
+    label: السنة
+    widget: string
+  - name: cover
+    label: الغلاف
+    widget: image
+  - name: coverAlt
+    label: وصف الغلاف (لجوجل وللمكفوفين)
+    widget: string
+  - widget: object
+    collapsed: false
     fields:
-    - name: id
-      widget: hidden
-    - widget: object
-      collapsed: false
-      fields:
-      - name: ar
-        label: عربي
-        widget: string
-      - name: en
-        label: English
-        widget: string
-      name: kicker
-      label: السطر الصغير فوق الاسم
     - name: ar
-      label: الاسم بالعربي
-      widget: string
+      label: عربي
+      widget: text
     - name: en
-      label: الاسم بالإنجليزي
+      label: English
+      widget: text
+    name: about
+    label: عن الألبوم
+  - widget: list
+    summary: '{{fields.label}}'
+    fields:
+    - name: label
+      label: اسم الزرار (Spotify, YouTube...)
       widget: string
-    - name: year
-      label: السنة
+    - name: url
+      label: اللينك
       widget: string
-    - name: cover
-      label: الغلاف
-      widget: image
-    - name: coverAlt
-      label: وصف الغلاف (لجوجل وللمكفوفين)
+    name: links
+    label: اللينكات
+  - widget: list
+    summary: '{{fields.n}} — {{fields.title}}'
+    fields:
+    - name: n
+      label: الرقم
       widget: string
-    - widget: object
-      collapsed: false
-      fields:
-      - name: ar
-        label: عربي
-        widget: text
-      - name: en
-        label: English
-        widget: text
-      name: about
-      label: عن الألبوم
-    - widget: list
-      summary: '{{fields.label}}'
-      fields:
-      - name: label
-        label: اسم الزرار (Spotify, YouTube...)
-        widget: string
-      - name: url
-        label: اللينك
-        widget: string
-      name: links
-      label: اللينكات
-    - widget: list
-      summary: '{{fields.n}} — {{fields.title}}'
-      fields:
-      - name: n
-        label: الرقم
-        widget: string
-      - name: title
-        label: اسم التراك
-        widget: string
-      - name: note
-        label: ملاحظة (مثلاً FEAT. ...)
-        widget: string
-        required: false
-      - name: audio
-        label: مقطع صوت (m4a / mp3)
-        widget: file
-        required: false
-      name: tracks
-      label: التراكات
+    - name: title
+      label: اسم التراك
+      widget: string
+    - name: note
+      label: ملاحظة (مثلاً FEAT. ...)
+      widget: string
+      required: false
+    - name: audio
+      label: مقطع صوت (m4a / mp3)
+      widget: file
+      required: false
+    name: tracks
+    label: التراكات
 - name: production
   label: الإنتاج
   icon: tune

@@ -6,10 +6,11 @@ import Divider from './Divider';
 import type { Album } from '../data/content';
 import { useLang } from '../lib/i18n';
 
-type Theme = { bg: string; fg: string; accent: string; soft: string; on: string; dim: string };
-
-export default function AlbumSection({ album, theme, flip, divider }: { album: Album; theme: Theme; flip?: boolean; divider?: 'curve' }) {
+export default function AlbumSection({ album, flip, divider }: { album: Album; flip?: boolean; divider?: 'curve' }) {
   const lang = useLang();
+  const { bg, fg, accent } = album.theme;
+  // Softer tones are mixed from the three colours set in the dashboard.
+  const theme = { bg, fg, accent, soft: `color-mix(in srgb, ${accent} 50%, transparent)`, on: bg, dim: `color-mix(in srgb, ${accent} 75%, ${fg})` };
   const style = { background: theme.bg, color: theme.fg, ['--line' as string]: theme.soft } as React.CSSProperties;
   return (
     <section id={album.id} className="section section--album" style={style}>

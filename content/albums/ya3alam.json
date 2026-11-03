@@ -1,5 +1,11 @@
 {
   "id": "ya3alam",
+  "order": 1,
+  "theme": {
+    "bg": "#241E1A",
+    "fg": "#F1E6DA",
+    "accent": "#D6B48C"
+  },
   "kicker": {
     "ar": "الألبوم الأول",
     "en": "DEBUT ALBUM"
