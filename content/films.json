@@ -9,8 +9,9 @@
       "ratio": "1262 / 1800",
       "poster": "film-lingering-poster",
       "motion": "/media/video/lingering-motion.mp4",
-      "trailer": "/media/video/lingering-trailer.mp4",
-      "still": "film-lingering-still",
+      "trailer": "/media/video/lingering-trailer-2026.mp4",
+      "trailerRatio": "1280 / 664",
+      "still": "/media/img/film-lingering-trailer-poster.webp",
       "extra": {
         "img": "film-lingering-eaff",
         "alt": "Still from Lingering, Official Selection Egyptian American Film Festival 2026"
@@ -54,7 +55,8 @@
           "name": "Egyptian American Film Festival",
           "year": "5th edition · Student projects"
         }
-      ]
+      ],
+      "trailerRatio": "16 / 9"
     }
   ]
 }

@@ -244,6 +244,7 @@ collections:
               - { name: ratio, label: 'أبعاد البوستر (مثلاً 4 / 5)', widget: string }
               - { name: motion, label: 'بوستر متحرك (mp4)', widget: file, required: false }
               - { name: trailer, label: 'التريلر (mp4)', widget: file, required: false }
+              - { name: trailerRatio, label: 'أبعاد التريلر (مثلاً 16 / 9)', widget: string, required: false, default: '16 / 9' }
               - { name: still, label: صورة قبل تشغيل التريلر, widget: image, required: false }
               - name: extra
                 label: صورة إضافية

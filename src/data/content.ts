@@ -23,7 +23,7 @@ export type Clip = { n?: string; title: string; tag: string; video: string; post
 export type Concert = { label: string; place: string; vertical: boolean; clips: Clip[]; photos: Photo[] };
 export type Film = {
   ar: string; en: string; accent: string; dirLabel: string; director: string; ratio: string; poster: string; motion?: string;
-  trailer?: string; still?: string; extra?: { img: string; alt: string } | null; fests: { name: string; year: string }[];
+  trailer?: string; trailerRatio?: string; still?: string; extra?: { img: string; alt: string } | null; fests: { name: string; year: string }[];
 };
 
 export const SITE = { name: site.name as T, email: site.email, roles: site.roles as T, tagline: site.tagline as T, description: site.description as T };

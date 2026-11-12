@@ -587,6 +587,11 @@ collections:
         label: التريلر (mp4)
         widget: file
         required: false
+      - name: trailerRatio
+        label: أبعاد التريلر (مثلاً 16 / 9)
+        widget: string
+        required: false
+        default: 16 / 9
       - name: still
         label: صورة قبل تشغيل التريلر
         widget: image

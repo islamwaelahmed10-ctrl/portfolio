@@ -44,7 +44,7 @@ export default function Film() {
               </div>
               {f.trailer && <>
                 <span className="label-sm" style={{ color: f.accent }}>TRAILER</span>
-                <video className="film__trailer" src={f.trailer} poster={imgUrl(f.still || '')} controls playsInline preload="none" aria-label={`${f.en} trailer`} />
+                <video className="film__trailer" style={{ aspectRatio: f.trailerRatio || '16 / 9' }} src={f.trailer} poster={imgUrl(f.still || '')} controls playsInline preload="none" aria-label={`${f.en} trailer`} />
               </>}
               {f.extra?.img && <Img name={f.extra.img} alt={f.extra.alt} sizes="(max-width: 800px) 90vw, 760px" className="film__still" />}
             </div>
