@@ -1,0 +1,809 @@
+# Generated from scripts/cms-config.src.yml by scripts/build-cms-config.py — edit the source, not this file.
+backend:
+  name: github
+  repo: islamwaelahmed10-ctrl/portfolio
+  branch: build
+  base_url: https://islamwael.pages.dev
+  auth_scope: public_repo
+site_url: https://islamwael.pages.dev
+display_url: https://islamwael.pages.dev
+logo_url: /media/img/logo-dark-96.webp
+media_folder: public/media/uploads
+public_folder: /media/uploads
+media_libraries:
+  default:
+    config:
+      max_file_size: 25000000
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1800
+          height: 1800
+collections:
+- name: general
+  label: عام
+  icon: home
+  editor:
+    preview: false
+  files:
+  - name: site
+    label: بيانات الموقع
+    file: content/site.json
+    fields:
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+      name: name
+      label: الاسم
+    - name: email
+      label: الإيميل
+      widget: string
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+      name: roles
+      label: السطر اللي فوق الاسم
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
+      name: tagline
+      label: الجملة اللي تحت الاسم
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
+      name: description
+      label: وصف الموقع لجوجل
+    - name: genres
+      label: أنواع المزيكا
+      widget: list
+      summary: '{{fields.ar}} / {{fields.en}}'
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+    - widget: list
+      summary: '{{fields.label}}'
+      fields:
+      - name: label
+        label: اسم الزرار (Spotify, YouTube...)
+        widget: string
+      - name: url
+        label: اللينك
+        widget: string
+      name: social
+      label: السوشيال
+    - name: pressKitUrl
+      label: ملف الـ Press kit (PDF)
+      widget: file
+      required: false
+  - name: texts
+    label: جمل الأقسام
+    file: content/texts.json
+    fields:
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
+      name: singles
+      label: وصف الأغاني
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
+      name: covers
+      label: وصف التوزيعات
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
+      name: film
+      label: وصف الأفلام
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
+      name: live
+      label: وصف الحفلات
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
+      name: contact
+      label: وصف راسلني
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+      name: nextShow
+      label: الحفلة الجاية
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+      name: nextShowSub
+      label: تحت الحفلة الجاية
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+      name: pressKitSub
+      label: تحت زرار الـ Press kit
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+      name: workWithMe
+      label: زرار اشتغل معايا
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+      name: listen
+      label: زرار اسمع
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+      name: sent
+      label: رسالة الإرسال تم
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: string
+      - name: en
+        label: English
+        widget: string
+      name: failed
+      label: رسالة الخطأ
+- name: albums
+  label: الألبومات
+  label_singular: ألبوم
+  icon: album
+  description: كل ألبوم هنا بيبقى قسم في الصفحة الرئيسية. لإضافة ألبوم جديد دوس New. الترتيب حسب خانة «الترتيب».
+  folder: content/albums
+  extension: json
+  format: json
+  create: true
+  delete: true
+  slug: '{{fields.id}}'
+  identifier_field: en
+  summary: '{{fields.order}}. {{fields.en}} — {{fields.ar}} ({{fields.year}})'
+  sortable_fields:
+  - order
+  - year
+  - en
+  editor:
+    preview: false
+  fields:
+  - name: id
+    label: كود الألبوم (إنجليزي صغير من غير مسافات، مثلاً ya3alam)
+    widget: string
+    pattern:
+    - ^[a-z0-9-]+$
+    - حروف إنجليزي صغيرة وأرقام وشرطة بس
+  - name: order
+    label: الترتيب في الصفحة (1 = الأول)
+    widget: number
+    value_type: int
+    default: 3
+  - name: theme
+    label: ألوان القسم
+    widget: object
+    collapsed: false
+    fields:
+    - name: bg
+      label: لون الخلفية
+      widget: color
+      default: '#1E2822'
+    - name: fg
+      label: لون الكلام
+      widget: color
+      default: '#F8F2EF'
+    - name: accent
+      label: اللون المميز (العناوين والأزرار)
+      widget: color
+      default: '#D9A9AC'
+  - widget: object
+    collapsed: false
+    fields:
+    - name: ar
+      label: عربي
+      widget: string
+    - name: en
+      label: English
+      widget: string
+    name: kicker
+    label: السطر الصغير فوق الاسم
+  - name: ar
+    label: الاسم بالعربي
+    widget: string
+  - name: en
+    label: الاسم بالإنجليزي
+    widget: string
+  - name: year
+    label: السنة
+    widget: string
+  - name: cover
+    label: الغلاف
+    widget: image
+  - name: coverAlt
+    label: وصف الغلاف (لجوجل وللمكفوفين)
+    widget: string
+  - widget: object
+    collapsed: false
+    fields:
+    - name: ar
+      label: عربي
+      widget: text
+    - name: en
+      label: English
+      widget: text
+    name: about
+    label: عن الألبوم
+  - widget: list
+    summary: '{{fields.label}}'
+    fields:
+    - name: label
+      label: اسم الزرار (Spotify, YouTube...)
+      widget: string
+    - name: url
+      label: اللينك
+      widget: string
+    name: links
+    label: اللينكات
+  - widget: list
+    summary: '{{fields.n}} — {{fields.title}}'
+    fields:
+    - name: n
+      label: الرقم
+      widget: string
+    - name: title
+      label: اسم التراك
+      widget: string
+    - name: note
+      label: ملاحظة (مثلاً FEAT. ...)
+      widget: string
+      required: false
+    - name: audio
+      label: مقطع صوت (m4a / mp3)
+      widget: file
+      required: false
+    name: tracks
+    label: التراكات
+- name: production
+  label: الإنتاج
+  icon: tune
+  editor:
+    preview: false
+  files:
+  - name: production
+    label: الإنتاج لفنانين
+    file: content/production.json
+    fields:
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
+      name: about
+      label: وصف القسم
+    - name: pink
+      label: Pink — مي الغيطي
+      widget: object
+      fields:
+      - name: artistAr
+        label: اسم الفنان بالعربي
+        widget: string
+      - name: artistEn
+        label: اسم الفنان بالإنجليزي
+        widget: string
+      - name: cover
+        label: الغلاف
+        widget: image
+      - name: credits
+        label: الكريديتس
+        widget: list
+        summary: '{{fields.k}}: {{fields.v}}'
+        fields:
+        - name: k
+          label: الدور
+          widget: string
+        - name: v
+          label: الاسم
+          widget: string
+        - name: wide
+          label: بعرض السطر كله
+          widget: boolean
+          required: false
+          default: false
+      - widget: list
+        summary: '{{fields.n}} — {{fields.title}}'
+        fields:
+        - name: n
+          label: الرقم
+          widget: string
+        - name: title
+          label: اسم التراك
+          widget: string
+        - name: note
+          label: ملاحظة (مثلاً FEAT. ...)
+          widget: string
+          required: false
+        - name: audio
+          label: مقطع صوت (m4a / mp3)
+          widget: file
+          required: false
+        name: tracks
+        label: التراكات
+      - widget: list
+        summary: '{{fields.label}}'
+        fields:
+        - name: label
+          label: اسم الزرار (Spotify, YouTube...)
+          widget: string
+        - name: url
+          label: اللينك
+          widget: string
+        name: links
+        label: اللينكات
+      - name: stats
+        label: الأرقام
+        widget: list
+        summary: '{{fields.n}} {{fields.k}}'
+        fields:
+        - name: n
+          label: الرقم
+          widget: string
+        - name: k
+          label: الوصف
+          widget: string
+    - name: minFat
+      label: من فات قديمه — سرد
+      widget: object
+      fields:
+      - name: title
+        label: الاسم
+        widget: string
+      - name: cover
+        label: الغلاف
+        widget: image
+      - name: tracks
+        label: الأغاني
+        widget: list
+        summary: '{{fields.title}}'
+        fields:
+        - name: title
+          label: الاسم
+          widget: string
+        - name: role
+          label: دوري فيها
+          widget: string
+      - widget: list
+        summary: '{{fields.label}}'
+        fields:
+        - name: label
+          label: اسم الزرار (Spotify, YouTube...)
+          widget: string
+        - name: url
+          label: اللينك
+          widget: string
+        name: links
+        label: اللينكات
+    - name: services
+      label: الخدمات
+      widget: list
+      field:
+        name: service
+        label: خدمة
+        widget: string
+- name: singles
+  label: الأغاني (سينجلز)
+  icon: music_note
+  editor:
+    preview: false
+  files:
+  - name: singles
+    label: السينجلز
+    file: content/singles.json
+    fields:
+    - name: items
+      label: الأغاني
+      widget: list
+      summary: '{{fields.n}} — {{fields.title}}'
+      fields:
+      - name: n
+        label: الرقم
+        widget: string
+      - name: title
+        label: الاسم
+        widget: string
+      - name: note
+        label: ملاحظة (ORIGINAL / FEAT. ...)
+        widget: string
+        required: false
+      - name: url
+        label: اللينك
+        widget: string
+- name: covers
+  label: التوزيعات (كوفرز)
+  icon: piano
+  editor:
+    preview: false
+  files:
+  - name: covers
+    label: الكوفرز
+    file: content/covers.json
+    fields:
+    - name: items
+      label: الكوفرز
+      widget: list
+      summary: '{{fields.n}} — {{fields.title}}'
+      fields:
+      - name: n
+        label: الرقم
+        widget: string
+      - name: title
+        label: اسم الأغنية
+        widget: string
+      - name: artist
+        label: المطرب الأصلي
+        widget: string
+      - name: poster
+        label: صورة الغلاف
+        widget: image
+      - name: video
+        label: الڤيديو (mp4، أقل من 25 ميجا)
+        widget: file
+- name: films
+  label: الأفلام
+  icon: movie
+  editor:
+    preview: false
+  files:
+  - name: films
+    label: الأفلام
+    file: content/films.json
+    fields:
+    - name: items
+      label: الأفلام
+      widget: list
+      summary: '{{fields.en}} — {{fields.ar}}'
+      fields:
+      - name: ar
+        label: الاسم بالعربي
+        widget: string
+      - name: en
+        label: الاسم بالإنجليزي
+        widget: string
+      - name: director
+        label: المخرج
+        widget: string
+      - name: dirLabel
+        label: كلمة المخرج (DIRECTED BY / WRITTEN & DIRECTED BY)
+        widget: string
+      - name: accent
+        label: لون الفيلم
+        widget: color
+      - name: poster
+        label: البوستر
+        widget: image
+      - name: ratio
+        label: أبعاد البوستر (مثلاً 4 / 5)
+        widget: string
+      - name: motion
+        label: بوستر متحرك (mp4)
+        widget: file
+        required: false
+      - name: trailer
+        label: التريلر (mp4)
+        widget: file
+        required: false
+      - name: trailerRatio
+        label: أبعاد التريلر (مثلاً 16 / 9)
+        widget: string
+        required: false
+        default: 16 / 9
+      - name: still
+        label: صورة قبل تشغيل التريلر
+        widget: image
+        required: false
+      - name: extra
+        label: صورة إضافية
+        widget: object
+        required: false
+        fields:
+        - name: img
+          label: الصورة
+          widget: image
+          required: false
+        - name: alt
+          label: وصف الصورة
+          widget: string
+          required: false
+      - name: fests
+        label: المهرجانات
+        widget: list
+        summary: '{{fields.name}} — {{fields.year}}'
+        fields:
+        - name: name
+          label: اسم المهرجان
+          widget: string
+        - name: year
+          label: الدورة / السنة
+          widget: string
+- name: live
+  label: الحفلات
+  icon: mic
+  editor:
+    preview: false
+  files:
+  - name: live
+    label: الحفلات
+    file: content/live.json
+    fields:
+    - name: shows
+      label: كروت الحفلات
+      widget: list
+      summary: '{{fields.date}} — {{fields.title}}'
+      fields:
+      - name: tag
+        label: السطر الصغير (مثلاً FIRST LIVE · YA 3ALAM)
+        widget: string
+      - name: title
+        label: اسم الحفلة
+        widget: string
+      - name: date
+        label: التاريخ
+        widget: string
+      - name: venue
+        label: المكان
+        widget: string
+      - name: note
+        label: ملاحظة
+        widget: string
+        required: false
+      - name: poster
+        label: البوستر
+        widget: image
+      - name: alt
+        label: وصف البوستر
+        widget: string
+    - name: concerts
+      label: مقاطع وصور من الحفلات
+      widget: list
+      summary: '{{fields.label}}'
+      fields:
+      - name: label
+        label: العنوان (مثلاً FROM THE FIRST SHOW · NOIR ART ZONE)
+        widget: string
+      - name: place
+        label: اسم المكان
+        widget: string
+      - name: vertical
+        label: المقاطع طولية (موبايل)
+        widget: boolean
+        default: false
+      - name: clips
+        label: المقاطع
+        widget: list
+        required: false
+        summary: '{{fields.title}} — {{fields.tag}}'
+        fields:
+        - name: n
+          label: الرقم
+          widget: string
+          required: false
+        - name: title
+          label: اسم الأغنية
+          widget: string
+        - name: tag
+          label: السطر الصغير (LIVE · 0:30)
+          widget: string
+        - name: video
+          label: المقطع (mp4، أقل من 25 ميجا)
+          widget: file
+        - name: poster
+          label: صورة قبل التشغيل
+          widget: image
+      - name: photos
+        label: الصور
+        widget: list
+        required: false
+        summary: '{{fields.alt}}'
+        fields:
+        - name: img
+          label: الصورة
+          widget: image
+        - name: alt
+          label: وصف الصورة
+          widget: string
+        - name: span
+          label: حجمها في الشبكة
+          widget: select
+          required: false
+          options:
+          - label: كبيرة
+            value: big
+          - label: طولية
+            value: tall
+          - label: عريضة
+            value: wide
+          - label: عادية
+            value: one
+        - name: pos
+          label: مكان التركيز (مثلاً center 30%)
+          widget: string
+          required: false
+- name: workshops
+  label: الورش
+  icon: school
+  editor:
+    preview: false
+  files:
+  - name: workshops
+    label: ورش وتدريب
+    file: content/workshops.json
+    fields:
+    - widget: object
+      collapsed: false
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
+      name: intro
+      label: وصف القسم
+    - name: items
+      label: الكروت
+      widget: list
+      summary: '{{fields.tag}}'
+      fields:
+      - name: tag
+        label: السطر الصغير (بالإنجليزي)
+        widget: string
+      - widget: object
+        collapsed: false
+        fields:
+        - name: ar
+          label: عربي
+          widget: string
+        - name: en
+          label: English
+          widget: string
+        name: title
+        label: العنوان
+      - widget: object
+        collapsed: false
+        fields:
+        - name: ar
+          label: عربي
+          widget: text
+        - name: en
+          label: English
+          widget: text
+        name: body
+        label: الوصف
+      - name: places
+        label: الأماكن
+        widget: list
+        required: false
+        summary: '{{fields.ar}}'
+        fields:
+        - name: ar
+          label: عربي
+          widget: string
+        - name: en
+          label: English
+          widget: string
+- name: story
+  label: الحكاية
+  icon: auto_stories
+  editor:
+    preview: false
+  files:
+  - name: story
+    label: الحكاية
+    file: content/story.json
+    fields:
+    - name: paragraphs
+      label: الفقرات
+      widget: list
+      summary: '{{fields.ar}}'
+      fields:
+      - name: ar
+        label: عربي
+        widget: text
+      - name: en
+        label: English
+        widget: text
